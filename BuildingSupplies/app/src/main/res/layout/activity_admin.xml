@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Admin">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="134dp"
+        android:fontFamily="@font/candal"
+        android:gravity="center"
+        android:text="Admin dashboard"
+        android:textAlignment="center"
+        android:textColor="#042792"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminInfo">
+
+
+        <TextView
+            android:id="@+id/mngUsers"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#E8F84C"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:text="Manage users"
+            android:textAlignment="center"
+            android:textColor="#042792"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/mngCat"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#E8F84C"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:text="Manage Categories"
+            android:textAlignment="center"
+            android:textColor="#042792"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/mngProd"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#E8F84C"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:text="Manage Products"
+            android:textAlignment="center"
+            android:textColor="#042792"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adminInfo"
+        android:layout_width="323dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="60dp"
+        android:fontFamily="@font/candal"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#042792"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

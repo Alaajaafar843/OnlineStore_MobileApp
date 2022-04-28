@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#042792"
+    tools:context=".AddProduct">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/Prodname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Product name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="39dp" />
+
+        <EditText
+            android:id="@+id/cid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Category id"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="118dp" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Quantity"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+        <EditText
+            android:id="@+id/prodID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Product id"
+            android:layout_margin="10dp"
+            android:inputType="number" />
+
+        <ImageView
+            android:id="@+id/productImg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/addProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:textColor="#042792"
+            android:fontFamily="@font/candal"
+            android:text="Add" />
+        <Button
+            android:id="@+id/SelectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:textColor="#042792"
+            android:fontFamily="@font/candal"
+            android:text="Select image" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBaraddprod"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="362dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="190dp"
+        android:background="#FFFFFF"
+        android:indeterminate="true"
+        android:indeterminateTint="#042792"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

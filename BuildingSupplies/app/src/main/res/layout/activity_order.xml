@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".OrderActivity">
+
+    <ImageView
+        android:id="@+id/ProductImage"
+        android:layout_width="198dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="107dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProductImage">
+
+        <TextView
+            android:id="@+id/Pname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#042792" />
+
+        <TextView
+            android:id="@+id/Pprice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#042792" />
+
+        <TextView
+            android:id="@+id/Pquantity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#042792" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:hint="Address"
+            android:textAlignment="center"
+            android:textColor="#042792"
+            android:textColorHint="#6490FF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/inc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#042792"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#042792"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/placeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="#042792"
+                android:fontFamily="@font/candal"
+                android:text="Order"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressOrder"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="314dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="49dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#042792"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
